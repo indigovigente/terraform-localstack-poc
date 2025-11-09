@@ -1,0 +1,24 @@
+ # IDE
+.idea/
+.vscode/
+.history/
+.vagrant/
+.buildpath/
+.project/
+.settings/
+.terraform/*
+.terraform
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+backend.tf
+*.lock.hcl
+infrastructure/.terraform/
+.terraform.lock.hcl
+*.zip
+*.tfstate
+*.tfstate.*
