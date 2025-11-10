@@ -59,6 +59,30 @@ docker run --rm -it \
   localstack/localstack
 ```
 
+### Start terraform
+> I used OpenTOFU, but if you want you can use Terraform; just check the documentation to adapt the provider.
+
+- [terraform](https://github.com/tfutils/tfenv)
+- [tofu](https://opentofu.org/docs/intro/install)
+
+
+```terraform
+tofu init
+```
+
+### Run the plan
+> To validate what will be created in Terraform.
+```terraform
+tofu plan
+```
+
+### Apply the Terraform infrastructure.
+> If everything is correct, apply the infrastructure.
+
+```terraform
+tofu apply -auto-approve
+```
+
 ### List Lambdas
 
 ```sh
