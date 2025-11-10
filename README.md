@@ -61,6 +61,7 @@ docker run --rm -it \
 
 ### Start terraform
 > I used OpenTOFU, but if you want you can use Terraform; just check the documentation to adapt the provider.
+> Remember that all commands related to Terraform must be executed within the `infrastructure` folder.
 
 - [terraform](https://github.com/tfutils/tfenv)
 - [tofu](https://opentofu.org/docs/intro/install)
