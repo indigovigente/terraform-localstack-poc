@@ -46,6 +46,19 @@ The POC demonstrates that it is possible to test applications in an AWS-like inf
 
 ## Useful Commands
 
+
+### Upload a container from localstack
+
+```sh
+docker run --rm -it \
+  -p 4566:4566 \
+  -p 4510-4559:4510-4559 \
+  -e SERVICES=lambda,sqs,iam \
+  -e LAMBDA_EXECUTOR=docker \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  localstack/localstack
+```
+
 ### List Lambdas
 
 ```sh
